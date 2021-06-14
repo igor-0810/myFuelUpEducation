@@ -1,0 +1,19 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+html {
+  font-size: 62.5%;
+  background-color: $color-white;
+}
+
+body {
+  background-color: $color-white;
+  box-sizing: border-box;
+  font-size: 1.6rem;
+  font-family: $font, sans-serif;
+  
+}

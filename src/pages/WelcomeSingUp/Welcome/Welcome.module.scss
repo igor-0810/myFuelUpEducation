@@ -1,0 +1,75 @@
+@import '../../../assets/styles/sass/variables';
+@import '../../../assets/styles/sass/mixin';
+
+.Welcome {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 60px;
+  // @include center;
+  // flex-direction: column;
+  h1 {
+    margin-bottom: 20px;
+    color: $primary-color;
+  }
+  p {
+    color: gray;
+    margin-bottom: 50px;
+  }
+
+  &FormInputs {
+    width: 45%;
+    margin-bottom: 20px;
+    position: relative;
+    input {
+      border-bottom: 2px solid lightgray !important;
+    }
+    p {
+      font-size: 13px;
+    }
+
+    select {
+      width: 100%;
+      height: 30px;
+      border: none;
+      outline: none;
+      border-bottom: 2px solid lightgray;
+      appearance: none;
+      background: url('../images/arrow-down.svg');
+      background-repeat: no-repeat;
+      background-position: right 10px top 60%;
+      cursor: pointer;
+      color: gray;
+    }
+  }
+  &DatePicker {
+    position: relative;
+    width: 45%;
+    margin-bottom: 20px;
+
+    > div {
+      width: 100% !important;
+    }
+    input {
+      width: 100%;
+      height: 30px;
+      border: none;
+      border-bottom: 2px solid lightgray;
+      outline: none;
+      padding-top: 10px;
+    }
+  }
+  form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .ContinueButton {
+      @include OrangeButton($color-orange);
+      position: absolute;
+      bottom: 100px;
+    }
+    .ContinueButton:hover {
+      background-color: $color-orange-light;
+    }
+  }
+}

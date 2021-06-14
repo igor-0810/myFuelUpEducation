@@ -1,0 +1,61 @@
+@import '../../../assets/styles/sass/variables';
+@import '../../../assets/styles/sass/mixin';
+
+.eye {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+
+.SingUp {
+  &Title {
+    color: $primary-color;
+    text-align: center;
+    margin-top: 70px;
+  }
+  &Form {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 30px;
+
+    &InputDivs {
+      margin-bottom: 20px;
+      position: relative;
+      input {
+        border-bottom: 2px solid lightgray !important;
+      }
+    }
+    &Button {
+      margin-top: 30px;
+      display: flex;
+      justify-content: flex-end;
+      button {
+        @include OrangeButton($color-orange);
+      }
+      button:hover {
+        background-color: $color-orange-light;
+      }
+    }
+  }
+  &Or {
+    width: 60%;
+    margin: 25px auto;
+    @include center;
+    p {
+      margin: 0 10px;
+      color: gray;
+    }
+    div {
+      width: 80px;
+      height: 1px;
+      background-color: gray;
+    }
+  }
+  &HaveAccount {
+    text-align: center;
+    margin-top: 30px;
+    color: gray;
+  }
+}

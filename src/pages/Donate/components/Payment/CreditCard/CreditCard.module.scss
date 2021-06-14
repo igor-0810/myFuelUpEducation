@@ -1,0 +1,72 @@
+@import '../../../../../assets/styles/sass/variables';
+@import '../../../../../assets/styles/sass/mixin';
+
+.CreditCard {
+    margin-top: 50px;
+
+    label {
+    font-size: 13px;
+    height: 20px;
+    color: gray;
+  }
+   label::after{
+        content: '*';
+        color: red;
+        margin-left: 5px;
+      }
+    &Logo{
+      margin-top: 20px;
+      height: 30px;
+      img{
+          margin-right: 10px;
+          height: 100%;
+          width: 40px;
+          border-radius: 4px;
+          cursor: pointer;
+      }
+  }
+  &Form{
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-between;
+    &CardNumber{
+        width: 35%;
+    }
+    &Divs{
+        width: 20%;
+    }
+  }
+  &Footer {
+    margin-top: 20px;
+    &Main {
+      display: flex;
+      justify-content: space-between;
+      &LeftBox {
+        
+        @include center;
+        img {
+          cursor: pointer;
+          margin-right: 10px;
+        }
+        button {
+          color: $primary-color;
+          border: none;
+          background-color: none;
+          cursor: pointer;
+        }
+      }
+      &RightBox {
+        @include center;
+
+        button {
+          @include OrangeButton(orangered);
+          margin-left: 20px;
+        }
+      }
+    }
+    p {
+      margin-top: 20px;
+      color: gray;
+    }
+  }
+}

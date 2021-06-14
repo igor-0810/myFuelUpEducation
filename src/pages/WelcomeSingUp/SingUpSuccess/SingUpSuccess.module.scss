@@ -1,0 +1,28 @@
+@import '../../../assets/styles/sass/variables';
+@import '../../../assets/styles/sass/mixin';
+
+.SingUpSuccess{
+    margin-top: 70px;
+    @include  center;
+    flex-direction: column;
+    img{
+        height: 300px;
+        margin-bottom: 20px;
+    }
+    h2{
+        color: $primary-color;
+        margin: 0;
+    }
+    p{
+        color:gray;
+        margin: 20px 0;
+    }
+    button {
+        @include OrangeButton($color-orange);
+        margin-top: 5px;
+        padding: 10px;
+      }
+      button:hover {
+        background-color: $color-orange-light;
+      }
+}

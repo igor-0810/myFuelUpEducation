@@ -1,0 +1,34 @@
+@import '../../../../assets/styles/sass/variables';
+.Hero {
+  height: 80rem;
+  padding-top: 20rem;
+  user-select: none;
+  background: url('../../images/hero-image-x1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &MainHeading {
+    margin: 0 auto;
+    font-size: 4.5rem;
+    font-weight: bold;
+    line-height: 1.22;
+    color: $color-white;
+    text-align: center;
+  }
+
+  &SecondaryHeading {
+    line-height: 3.06;
+    letter-spacing: normal;
+    text-align: center;
+    color: $color-white;
+    padding-top: 2rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
+}
+
+.Hero2 {
+  @extend .Hero;
+  background: url('../../images/hero-2.jpeg');
+}

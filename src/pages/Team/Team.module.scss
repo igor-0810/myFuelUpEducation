@@ -1,0 +1,112 @@
+@import '../../assets/styles/sass/variables';
+@import '../../assets/styles/sass/mixin';
+
+.Team {
+  &MainContainer {
+    display: flex;
+    justify-content: center;
+    height: 70rem;
+    background-color: $primary-color;
+    background-image: url('./images/group-37.png');
+
+    &Title {
+      margin-top: 100px;
+      color: white;
+      text-align: center;
+      h1 {
+        margin-bottom: 30px;
+      }
+    }
+  }
+  &FindYourExpert {
+    @include center;
+    flex-direction: column;
+    padding: 50px;
+    div {
+      width: 70%;
+    }
+    h1 {
+      margin-top: 30px;
+      color: $primary-color;
+    }
+  }
+  &Cards {
+    width: 80%;
+    margin: 0 auto;
+    &SearchDiv {
+      display: flex;
+
+      &Select {
+        width: 30%;
+        margin-right: 20px;
+      }
+      &Input {
+        width: 50%;
+        input {
+          width: 100%;
+          height: 40px;
+          background-image: url('./images/search-solid.svg');
+          background-size: 16px 16px;
+          background-repeat: no-repeat;
+          background-position: 10px;
+          text-indent: 30px;
+          background-color: lightgray;
+          border: none;
+          outline: none;
+          border-radius: 3px;
+          &::placeholder {
+            color: darkslategray;
+          }
+        }
+      }
+    }
+  }
+  &CadrsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    &Card {
+      width: 25%;
+      margin-bottom: 40px;
+      &InnerCard {
+        width: 90%;
+        margin: 0 auto;
+        border-radius: 5px;
+        box-shadow: 0px 0px 11px 0px rgba(104, 103, 103, 0.37);
+      }
+      &Img {
+        height: 250px;
+        @include center;
+        padding: 20px;
+        img {
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+        }
+      }
+      &Description {
+        text-align: center;
+        padding: 20px;
+      }
+
+      &Logos {
+        @include center;
+        padding: 20px;
+        img {
+          margin-right: 10px;
+          width: 25px;
+          height: 25px;
+        }
+      }
+    }
+  }
+  .ViewMoreButton {
+      @include center;
+      padding: 30px;
+    button {
+      @include VioletButton(50px);
+      color: white;
+      background-color: $primary-color;
+    }
+  }
+}

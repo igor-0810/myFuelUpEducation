@@ -1,0 +1,18 @@
+.inputStyles {
+  width: 100%;
+  border: 'none';
+  height: '30px' !important;
+  border-bottom: '1px solid lightgray';
+  outline: 'none';
+  padding-top: '10px';
+}
+.AsteriskInput {
+  color: #ff0000;
+  position: absolute;
+  top: 5px;
+}
+.error {
+  color: #ff0000;
+  font-size: 12px;
+}
+
